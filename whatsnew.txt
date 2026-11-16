@@ -12,6 +12,7 @@
     - Torrent files from search results are downloaded through the internal proxy whenever it is enabled, like Burst searches, so tracker cookies keep working.
     - Proxy settings changed while Elementum is running now apply to the internal proxy without a restart.
     - Fixed progress dialogs showing raw texts like "LOCALIZE[30xxx]" instead of translated title and lines when they open.
+    - Fixed memory growth from RPC writer threads and closed connections not being fully released.
 
 [B][COLOR red]0.1.118[/COLOR][/B] - 2026-11-04
     - Added Scrob (self-hosted tracker) as a tracking service. Choose it in "Tracking" settings, enter your Scrob server address and authorize Elementum, or paste a Scrob API key instead: watched history, playback progress, scrobbling, "My Progress" and lists sync with it. Scrob has no watchlist, so a list named "Watchlist" is created on your Scrob and used for it. Scrob collection is read-only: it is synced into the library, but items you add to collection go to the "Watchlist" list instead.
